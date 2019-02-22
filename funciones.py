@@ -65,7 +65,7 @@ def calcular_iva_servicio(cantidad_horas, tasa):
 Desarrollo: David
 Pruebas: Edward
 Documentación: Johan
-"""
+""" $
 
 def calcular_iva_envio(kilometros, tasa):
     pass
@@ -113,3 +113,4 @@ def calcular_recaudo_mixto_local(coste_producto_1,
                                  horas_1,
                                  horas_2):
     pass
+
