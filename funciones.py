@@ -2,6 +2,7 @@
 Desarrollo: Edward
 Pruebas: Johan
 Documentación: David
+
 """
 def calcular_precio_producto(coste_producto):
     pass
