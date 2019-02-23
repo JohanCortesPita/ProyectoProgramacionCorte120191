@@ -32,7 +32,16 @@ Documentación: David
 """
 
 def calcular_costo_envio(kilometros):
-    pass
+
+    '''
+    (int) -> int
+    Calcula el total de kilometros recorridos fuera de la ciudad y define el total del envio del costo
+
+
+
+    :param kilometros: Kilometros recorridos
+    :return: Valor del envio
+    '''
 
 """
 Desarrollo: David
@@ -40,9 +49,15 @@ Pruebas: Edward
 Documentación: Johan
 """
 
-def calcular_precio_producto_fuera(coste_producto,
-                                   kilometros):
-    pass
+def calcular_precio_producto_fuera(coste_producto,kilometros):
+    """
+    Calcula el valor total si el producto es por fuera de la ciudad
+
+
+    :param: (float) coste_producto: costo del producto
+    :param: (float) kilometros: kilometros fuera de la ciudad
+    :return: (float) venta_fuera_de_la_ciudad: costo total del producto fuera de la ciudad
+    """
 
 """
 Desarrollo: David
@@ -51,7 +66,14 @@ Documentación: Johan
 """
 
 def calcular_iva_producto(coste_producto, tasa):
-    pass
+    '''
+    calcula el valor del iva si a la persona a la que se le vende es persona juridica
+
+
+    :param:  (float) coste_producto: costo del producto
+    :param:  (float) tasa: tasa de interes
+    :return: (float) valor total con iva: costo del producto con el interes
+    '''
 
 """
 Desarrollo: David
@@ -60,8 +82,14 @@ Documentación: Johan
 """
 
 def calcular_iva_servicio(cantidad_horas, tasa):
-    pass
+     '''
+    calcula el iva del valor del servicio por hora
 
+
+    :param: (float) cantidad_horas: cantidad de las hora laboradas por servicio
+    :param: (float) tasa: tasa de interes
+    :return: (float) servicio_con_iva: total del servico
+    '''
 """
 Desarrollo: David
 Pruebas: Edward
