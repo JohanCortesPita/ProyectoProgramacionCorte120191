@@ -22,6 +22,7 @@ def calcular_precio_servicio(cantidad_horas):
 
     >>> calcular_precio_servicio(1)
     100000
+
     >>> calcular_precio_servicio(5)
     500000
 """
