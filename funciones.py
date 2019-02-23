@@ -4,8 +4,18 @@ Pruebas: Johan
 Documentación: David
 
 """
+
 def calcular_precio_producto(coste_producto):
-    pass
+    '''
+    (int) -> int
+    Calcula el costo de un producto mas el 50%
+
+
+
+    :param coste_producto: (int) valor del producto
+    :return: (int) Valor total del producto
+    '''
+
 
 """
 Desarrollo: Edward
@@ -14,7 +24,16 @@ Documentación: David
 """
 
 def calcular_precio_servicio(cantidad_horas):
-    pass
+    '''
+    (int) -> (int)
+    Calcula el valor total del servicio segun horas trabajadas
+
+
+
+    :param cantidad_horas: int Horas trabajadas
+    :return: int Valor total del servicio segun horas trabajadas
+    '''
+
 
 """
 Desarrollo: Edward
@@ -23,7 +42,17 @@ Documentación: David
 """
 
 def calcular_precio_servicio_extras(cantidad_horas):
-    pass
+    '''
+    (int) -> int
+    Calcula el total de horas trabajadas y define el total de la tarifa mas horas extras
+
+
+
+
+    :param cantidad_horas: int Horas trabajadas
+    :return: int Tarifa total del servicio con horas extras
+    '''
+
 
 """
 Desarrollo: Edward
@@ -32,7 +61,16 @@ Documentación: David
 """
 
 def calcular_costo_envio(kilometros):
-    pass
+    '''
+    (int) -> int
+    Calcula el total de kilometros recorridos fuera de la ciudad y define el total del envio del costo
+
+
+
+    :param kilometros: Kilometros recorridos
+    :return: Valor del envio
+    '''
+
 
 """
 Desarrollo: David
