@@ -48,7 +48,6 @@ def calcular_precio_servicio_extras(cantidad_horas):
 
 
 
-
     :param cantidad_horas: int Horas trabajadas
     :return: int Tarifa total del servicio con horas extras
     '''
