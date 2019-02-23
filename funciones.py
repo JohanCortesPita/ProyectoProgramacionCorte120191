@@ -8,6 +8,7 @@ def calcular_precio_producto(coste_producto):
 
     >>> calcular_precio_producto(1000)
     1500.0
+
     >>> calcular_precio_producto(500)
     750.0
 
