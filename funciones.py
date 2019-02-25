@@ -123,6 +123,15 @@ def calcular_recaudo_mixto_local(coste_producto_1,
                                  coste_producto_2,
                                  horas_1,
                                  horas_2):
+    """
+
+    :param coste_producto_1:
+    :param coste_producto_2:
+    :param horas_1:
+    :param horas_2:
+    :return:
+    """
+
     #Calcula el recaudo total del servicio segun las horas trabajadas
     total_horas = calcular_precio_servicio(horas_1) + calcular_precio_servicio(horas_2)
 
