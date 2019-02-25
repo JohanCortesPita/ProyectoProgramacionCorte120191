@@ -4,7 +4,18 @@ Pruebas: Johan
 Documentación: David
 """
 def calcular_precio_producto(coste_producto):
-    pass
+    """
+
+      >>> calcular_precio_producto(1000)
+    1500.0
+
+    >>> calcular_precio_producto(500)
+    750.0
+
+    :param coste_producto:
+    :return:
+    """
+
 
 """
 Desarrollo: Edward
@@ -13,7 +24,17 @@ Documentación: David
 """
 
 def calcular_precio_servicio(cantidad_horas):
-    pass
+    """
+    >>> calcular_precio_servicio(1)
+    100000
+
+    >>> calcular_precio_servicio(5)
+    500000
+
+    :param cantidad_horas:
+    :return:
+    """
+
 
 """
 Desarrollo: Edward
@@ -22,7 +43,16 @@ Documentación: David
 """
 
 def calcular_precio_servicio_extras(cantidad_horas):
-    pass
+    """
+     >>> calcular_precio_servicio_extras(10)
+    1250000.0
+    >>> calcular_precio_servicio_extras(9)
+    1125000.0
+
+    :param cantidad_horas:
+    :return:
+    """
+
 
 """
 Desarrollo: Edward
@@ -31,7 +61,15 @@ Documentación: David
 """
 
 def calcular_costo_envio(kilometros):
-    pass
+    """
+     >>> calcular_costo_envio(1)
+    115
+    >>> calcular_costo_envio(2)
+    230
+
+    :param kilometros:
+    :return:
+    """
 
 """
 Desarrollo: David
