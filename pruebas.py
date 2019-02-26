@@ -36,16 +36,25 @@ class pruebas(unittest.TestCase):
 
 
     def test_calcular_precio_producto_fuera(self):
-        pass
+        def test_calcular_precio_producto_fuera(self):
+        self.assertEqual(f.calcular_precio_producto_fuera(5000,100),19000)
+        self.assertEqual(f.calcular_precio_producto_fuera(2000, 100), 14500
 
     def test_calcular_iva_producto(self):
-        pass
+        self.assertEqual(f.calcular_iva_producto(5000,7),525)
+        self.assertIsNot(f.calcular_iva_producto(5000,0), "El producto no tiene iva")
+        self.assertIsNot(f.calcular_iva_producto(5000,-1), "Verifique Iva")
 
     def test_calcular_iva_servicio(self):
-        pass
+        self.assertEqual(f.calcular_iva_servicio(5, 14),7000)
+        self.assertIsNot(f.calcular_iva_servicio(0, 14), "No realizo horas de servicio")
+        self.assertIsNot(f.calcular_iva_servicio(-1, 14), "Revisar las horas ingresadas")
 
+    
     def test_calcular_iva_envio(self):
-        pass
+        self.assertEqual(f.calcular_iva_envio(20, 16), 368.0)
+        self.assertIsNot(f.calcular_iva_envio(5, 0), "No aplica iva")
+        self.assertIsNot(f.calcular_iva_envio(-17, 16), "cifra no valida")
 
     def test_calcular_iva_servicio_fuera(self):
         self.assertEqual(f.calcular_iva_servicio_fuera(10,16),160000.0)
