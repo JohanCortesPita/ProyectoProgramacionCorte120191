@@ -64,9 +64,9 @@ class pruebas(unittest.TestCase):
     Documentación: Johan
     """
     def test_calcular_iva_servicio(self):
-        self.assertEqual(f.calcular_iva_producto(5, 14), 1.05)
-        self.assertIsNot(f.calcular_iva_producto(0, 14), "No realizo horas de servicio")
-        self.assertIsNot(f.calcular_iva_producto(-1, 14), "Revisar las horas ingresadas")
+        self.assertEqual(f.calcular_iva_servicio(5, 14),7000)
+        self.assertIsNot(f.calcular_iva_servicio(0, 14), "No realizo horas de servicio")
+        self.assertIsNot(f.calcular_iva_servicio(-1, 14), "Revisar las horas ingresadas")
 
     """
     Desarrollo: David
@@ -74,8 +74,7 @@ class pruebas(unittest.TestCase):
     Documentación: Johan
     """
     def test_calcular_iva_envio(self):
-
-
+        pass
     """
     Desarrollo: Johan
     Pruebas: David
