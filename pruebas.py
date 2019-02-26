@@ -74,7 +74,9 @@ class pruebas(unittest.TestCase):
     Documentación: Johan
     """
     def test_calcular_iva_envio(self):
-        pass
+        self.assertEqual(f.calcular_iva_envio(20, 16), 368.0)
+        self.assertIsNot(f.calcular_iva_envio(5, 0), "No aplica iva")
+        self.assertIsNot(f.calcular_iva_envio(-17, 16), "cifra no valida")
     """
     Desarrollo: Johan
     Pruebas: David
@@ -103,8 +105,8 @@ class pruebas(unittest.TestCase):
     Documentación: Edward
     """
     def test_calcular_recaudo_horas_extra(self):
-        self.assertEqual(f.calcular_recaudo_horas_extra(2,6,8,4),2000000)
-        self.assertEqual(f.calcular_recaudo_horas_extra(6,4,2,1),1300000)
+        self.assertEqual(f.calcular_recaudo_horas_extra(2,6,8,4),200000)
+        self.assertEqual(f.calcular_recaudo_horas_extra(6,4,2,1),130000)
         self.assertIsNot(f.calcular_recaudo_horas_extra(5,4,3,-85),"Cifras no validas")
         self.assertIsNot(f.calcular_recaudo_horas_extra(-5,-54,-98,-68),"Cifras no vlidas")
 
@@ -114,10 +116,10 @@ class pruebas(unittest.TestCase):
     Documentación: Edward
     """
     def test_calcular_recaudo_mixto_local(self):
-        self.assertEqual(f.calcular_recaudo_mixto_local(100,300,4,8),1200600.0)
-        self.assertEqual(f.calcular_recaudo_mixto_local(5000,3500,8,8),1612750.0)
-        self.assertEqual(f.calcular_recaudo_mixto_local(-100,50,-85,58),"Cifras no validas")
-        self.assertEqual(f.calcular_recaudo_mixto_local(5,98,4,8),"Cifras no validas")
+        self.assertEqual(f.calcular_recaudo_mixto_local(100,300,4,8),120600.0)
+        self.assertEqual(f.calcular_recaudo_mixto_local(5000,3500,8,8),172750.0)
+        self.assertIsNot(f.calcular_recaudo_mixto_local(-100,50,-85,58),"Cifras no validas")
+        self.assertIsNot(f.calcular_recaudo_mixto_local(5,98,4,8),"Cifras no validas")
 
 if __name__ == 'main':
     unittest.main()
