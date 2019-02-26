@@ -150,7 +150,7 @@ Documentación: Johan
 def calcular_iva_producto(coste_producto, tasa):
     
     '''
-    calcula el valor del iva si a la persona a la que se le vende es persona juridica
+    #calcula el valor del iva si a la persona a la que se le vende es persona juridica
     
     >>> calcular_iva_producto(2500,19)
     712.5
