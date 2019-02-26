@@ -36,14 +36,13 @@ class pruebas(unittest.TestCase):
 
 
     def test_calcular_precio_producto_fuera(self):
-        def test_calcular_precio_producto_fuera(self):
         self.assertEqual(f.calcular_precio_producto_fuera(5000,100),19000)
         self.assertEqual(f.calcular_precio_producto_fuera(2000, 100), 14500
 
     def test_calcular_iva_producto(self):
         self.assertEqual(f.calcular_iva_producto(5000,7),525)
-        self.assertIsNot(f.calcular_iva_producto(5000,0), "El producto no tiene iva")
-        self.assertIsNot(f.calcular_iva_producto(5000,-1), "Verifique Iva")
+        self.assertEqual(f.calcular_iva_producto(5000,0), "El producto no tiene iva")
+        self.assertEqual(f.calcular_iva_producto(5000,-1), "Verifique Iva")
 
     def test_calcular_iva_servicio(self):
         self.assertEqual(f.calcular_iva_servicio(5, 14),7000)
@@ -69,8 +68,8 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.calcular_recaudo_locales(20.89,854,-85),"Cifras no validas")
 
     def test_calcular_recaudo_horas_extra(self):
-        self.assertEqual(f.calcular_recaudo_horas_extra(2,6,8,4),2000000)
-        self.assertEqual(f.calcular_recaudo_horas_extra(6,4,2,1),1300000)
+        self.assertEqual(f.calcular_recaudo_horas_extra(2,6,8,4),200000)
+        self.assertEqual(f.calcular_recaudo_horas_extra(6,4,2,1),130000)
         self.assertEqual(f.calcular_recaudo_horas_extra(5,4,3,-85),"Cifras no validas")
         self.assertEqual(f.calcular_recaudo_horas_extra(-5,-54,-98,-68),"Cifras no vlidas")
 

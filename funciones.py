@@ -125,21 +125,22 @@ def calcular_precio_producto_fuera(coste_producto,
     >>> calcular_precio_producto_fuera(15000,80)
     31700.0
     
-    '''
+
     :param: (float) coste_producto: costo del producto
     :param: (float) kilometros: kilometros fuera de la ciudad
     :return: (float) venta_fuera_de_la_ciudad: costo total del producto fuera de la ciudad
+    '''
 
     #calcula el precio del producto
-     valor_producto = calcular_precio_producto(coste_producto)
+    valor_producto = calcular_precio_producto(coste_producto)
 
-     #Calculando costo de envio fuera de la ciudad
-     costo_envio = calcular_costo_envio(kilometros)
+    #Calculando costo de envio fuera de la ciudad
+    costo_envio = calcular_costo_envio(kilometros)
 
-     #Valor total de la venta fuera de la ciudad
-     venta_fuera_de_la_ciudad = valor_producto + costo_envio
+    #Valor total de la venta fuera de la ciudad
+    venta_fuera_de_la_ciudad = valor_producto + costo_envio
 
-     return venta_fuera_de_la_ciudad
+    return venta_fuera_de_la_ciudad
 
 """
 Desarrollo: David
@@ -162,14 +163,14 @@ def calcular_iva_producto(coste_producto, tasa):
     :return: (float) valor total con iva: costo del producto con el interes
     '''
     
-     #valor del producto
-     valor_producto = calcular_precio_producto(coste_producto)
+    #valor del producto
+    valor_producto = calcular_precio_producto(coste_producto)
 
 
-     #El iva del producto
-     iva = valor_producto * tasa / 100
+    #El iva del producto
+    iva = valor_producto * tasa / 100
 
-     return iva
+    return iva
 
 """
 Desarrollo: David
@@ -194,13 +195,13 @@ def calcular_iva_servicio(cantidad_horas, tasa):
     :return: (float) servicio_con_iva: total del servico
     '''
     
-     #Valores para calcular el servicio
-     servicio = calcular_precio_servicio(cantidad_horas)
+    #Valores para calcular el servicio
+    servicio = calcular_precio_servicio(cantidad_horas)
 
-     #El iva del producto
-     iva = servicio * tasa / 100
+    #El iva del producto
+    iva = servicio * tasa / 100
 
-     return iva
+    return iva
 
 """
 Desarrollo: David
@@ -222,13 +223,13 @@ def calcular_iva_envio(kilometros, tasa):
     :param tasa: tasa de interes
     :return: envio_con_iva: valor del iva del envio fuera de la ciudad
     '''
-     #Calculando costo de envio fuera de la ciudad
-     costo_envio = calcular_costo_envio(kilometros)
+    #Calculando costo de envio fuera de la ciudad
+    costo_envio = calcular_costo_envio(kilometros)
 
-     #El iva del envio
-     iva = costo_envio * tasa / 100
+    #El iva del envio
+    iva = costo_envio * tasa / 100
 
-     return iva
+    return iva
 
 """
 Desarrollo: Johan
@@ -262,9 +263,7 @@ Pruebas: David
 Documentación: Edward
 """
 
-def calcular_recaudo_locales(coste_producto_1,
-                             coste_producto_2,
-                             coste_producto_3):
+def calcular_recaudo_locales(coste_producto_1,coste_producto_2,coste_producto_3):
      '''
     (num, num) -> num
     
@@ -280,9 +279,8 @@ def calcular_recaudo_locales(coste_producto_1,
     :param coste_producto_3: (float) coste del producto 3
     :return: (float) recaudo locales
     '''
-
-     # Calcula el recaudo total de los productos
-    return calcular_precio_producto(coste_producto_1) + calcular_precio_producto(coste_producto_2) + calcular_precio_producto(coste_producto_3)
+     #Calcula el recaudo total de los productos
+     return calcular_precio_producto(coste_producto_1) + calcular_precio_producto(coste_producto_2) + calcular_precio_producto(coste_producto_3)
 
 """
 Desarrollo: Johan
@@ -290,19 +288,16 @@ Pruebas: David
 Documentación: Edward
 """
 
-def calcular_recaudo_horas_extra(horas_1,
-                                 horas_2,
-                                 horas_3,
-                                 horas_4):
+def calcular_recaudo_horas_extra(horas_1,horas_2,horas_3,horas_4):
                                  
    '''
     (num, num) -> num
     
     >>> calcular_recaudo_horas_extra(2,6,8,4)
-    2000000
+    200000
     
     >>> calcular_recaudo_horas_extra(6,4,2,1)
-    1300000
+    130000
     
     :param horas_1: (int) hora extra 1
     :param horas_2: (int) hora extra 2
@@ -310,9 +305,8 @@ def calcular_recaudo_horas_extra(horas_1,
     :param horas_4: (int) hora extra 4
     :return: (int) Valor del servicio (por horas extras)
     '''
-    
    #Calcular el recaudo del total de horas extras
-    return calcular_precio_servicio(horas_1) +calcular_precio_servicio(horas_2)+calcular_precio_servicio(horas_3)+calcular_precio_servicio(horas_4)
+   return calcular_precio_servicio(horas_1) +calcular_precio_servicio(horas_2)+calcular_precio_servicio(horas_3)+calcular_precio_servicio(horas_4)
 
 """
 Desarrollo: Johan
