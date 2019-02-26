@@ -117,7 +117,7 @@ def calcular_iva_servicio(cantidad_horas, tasa):
 Desarrollo: David
 Pruebas: Edward
 Documentación: Johan
-""" $
+"""
 
 def calcular_iva_envio(kilometros, tasa):
     '''
@@ -135,10 +135,15 @@ Documentación: Edward
 """
 
 def calcular_iva_servicio_fuera(cantidad_horas, tasa):
-    '''
+    """
+
     >>> calcular_iva_servicio_fuera(10,16)
     160000.0
-    '''
+
+    :param cantidad_horas:
+    :param tasa:
+    :return:
+    """
 
 """
 Desarrollo: Johan
@@ -146,9 +151,7 @@ Pruebas: David
 Documentación: Edward
 """
 
-def calcular_recaudo_locales(coste_producto_1,
-                             coste_producto_2,
-                             coste_producto_3):
+def calcular_recaudo_locales(coste_producto_1,coste_producto_2,coste_producto_3):
    '''
     >>> calcular_recaudo_locales(1,1,1)
     4.5
@@ -163,10 +166,7 @@ Pruebas: David
 Documentación: Edward
 """
 
-def calcular_recaudo_horas_extra(horas_1,
-                                 horas_2,
-                                 horas_3,
-                                 horas_4):
+def calcular_recaudo_horas_extra(horas_1,horas_2,horas_3,horas_4):
     '''
     
     >>> calcular_recaudo_horas_extra(2,6,8,4)
@@ -181,14 +181,16 @@ Pruebas: David
 Documentación: Edward
 """
 
-def calcular_recaudo_mixto_local(coste_producto_1,
-                                 coste_producto_2,
-                                 horas_1,
-                                 horas_2):
-    '''
+def calcular_recaudo_mixto_local(coste_producto_1,coste_producto_2,horas_1,horas_2):
+    """
+
     >>> calcular_recaudo_mixto_local(100,300,4,8)
     1200600.0
     >>> calcular_recaudo_mixto_local(5000,3500,8,8)
     1612750.0
-
-
+    :param coste_producto_1: 
+    :param coste_producto_2: 
+    :param horas_1: 
+    :param horas_2: 
+    :return: 
+    """
