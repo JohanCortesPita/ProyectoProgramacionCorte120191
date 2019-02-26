@@ -4,8 +4,11 @@ Pruebas: Johan
 Documentación: David
 """
 def calcular_precio_producto(coste_producto):
-    precio_producto=((coste_producto/2)+(coste_producto))
-    return precio_producto
+    #el porcentaje segun el producto
+    porcentaje = coste_producto * 0.50
+
+    #La suma del costo del producto mas el 50 porciento
+    valor_producto = coste_producto + porcentaje
 
 """
 Desarrollo: Edward
@@ -14,8 +17,10 @@ Documentación: David
 """
 
 def calcular_precio_servicio(cantidad_horas):
-    precio_servicio= (cantidad_horas*10000)
-    return precio_servicio
+    #Calcula el valor trabajado por horas
+    servicio = cantidad_horas * 10000
+    
+    return servicio
 
 """
 Desarrollo: Edward
@@ -24,7 +29,17 @@ Documentación: David
 """
 
 def calcular_precio_servicio_extras(cantidad_horas):
-    pass
+    #Calculado el servicio con horas extras
+    
+    horas_extras = cantidad_horas * 100000
+
+    #calculamos el valor de la hora mas el calulo de la extra
+    he = horas_extras + (horas_extras * 0.25)
+
+    #valor total de la hora extra
+    valor_extras = he
+
+    return valor_extras
 
 """
 Desarrollo: Edward
@@ -33,8 +48,10 @@ Documentación: David
 """
 
 def calcular_costo_envio(kilometros):
+    #Calculando costo de envio fuera de la ciudad
+    costo_envio = kilometros * 115
 
-    pass
+    return costo_envio
 
 
 """
