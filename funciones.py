@@ -127,7 +127,13 @@ Documentación: Edward
 """
 
 def calcular_iva_servicio_fuera(cantidad_horas, tasa):
-    pass
+    '''
+    (num, num) -> num
+    
+    :param: cantidad_horas: (int) cantidad de horas de servicio
+    :param tasa: (int) tasa de interes
+    :return: (float) valor del servicio con iva
+    '''
 
 """
 Desarrollo: Johan
@@ -136,7 +142,14 @@ Documentación: Edward
 """
 
 def calcular_recaudo_locales(coste_producto_1,coste_producto_2,coste_producto_3):
-    pass
+    '''
+    (num, num) -> num
+    
+    :param coste_producto_1: (float) coste del producto 1
+    :param coste_producto_2: (float) coste del producto 2
+    :param coste_producto_3: (float) coste del producto 3
+    :return: (float) recaudo locales
+    '''
 
 """
 Desarrollo: Johan
@@ -145,7 +158,15 @@ Documentación: Edward
 """
 
 def calcular_recaudo_horas_extra(horas_1,horas_2,horas_3,horas_4):
-    pass
+    '''
+    (num, num) -> num
+    
+    :param horas_1: (int) hora extra 1
+    :param horas_2: (int) hora extra 2
+    :param horas_3: (int) hora extra 3
+    :param horas_4: (int) hora extra 4
+    :return: (int) Valor del servicio (por horas extras)
+    '''
 
 """
 Desarrollo: Johan
@@ -154,4 +175,12 @@ Documentación: Edward
 """
 
 def calcular_recaudo_mixto_local(coste_producto_1,coste_producto_2,horas_1,horas_2):
-    pass
+    '''
+    (num, num) -> num
+    
+    :param coste_producto_1: (num) costo del producto 1
+    :param coste_producto_2: (num) costo del producto 2
+    :param horas_1: (int) Horas de trabajo 1
+    :param horas_2: (int) Horas de trabajo 2
+    :return: (num) Recaudo mixto total
+    '''
