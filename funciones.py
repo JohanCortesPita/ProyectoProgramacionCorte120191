@@ -129,7 +129,7 @@ def calcular_precio_producto_fuera(coste_producto,
     :param: (float) coste_producto: costo del producto
     :param: (float) kilometros: kilometros fuera de la ciudad
     :return: (float) venta_fuera_de_la_ciudad: costo total del producto fuera de la ciudad
-    '''
+
     #calcula el precio del producto
      valor_producto = calcular_precio_producto(coste_producto)
 
@@ -320,12 +320,10 @@ Pruebas: David
 Documentación: Edward
 """
 
-def calcular_recaudo_mixto_local(coste_producto_1,
-                                 coste_producto_2,
-                                 horas_1,
-                                 horas_2):
-      '''
-     (num, num) -> num
+
+def calcular_recaudo_mixto_local(coste_producto_1,coste_producto_2,horas_1,horas_2):
+    """
+    (num, num) -> num
     
      >>> calcular_recaudo_mixto_local(100,300,4,8)
     1200600.0
@@ -337,12 +335,13 @@ def calcular_recaudo_mixto_local(coste_producto_1,
     :param horas_1: (int) Horas de trabajo 1
     :param horas_2: (int) Horas de trabajo 2
     :return: (num) Recaudo mixto total
-    '''
+    """
     
     #Calcula el recaudo total del servicio segun las horas trabajadas
     total_horas = calcular_precio_servicio(horas_1) + calcular_precio_servicio(horas_2)
 
     #Calcula el recaudo total del producto segun el valor del producto
     total_productos = calcular_precio_producto(coste_producto_1) + calcular_precio_producto(coste_producto_2)
+
 
     return total_horas + total_productos
