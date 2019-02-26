@@ -25,7 +25,6 @@ Documentación: David
 def calcular_precio_servicio(cantidad_horas):
     '''
 
-
     (int) -> (int)
     Calcula el valor total del servicio segun horas trabajadas
 
