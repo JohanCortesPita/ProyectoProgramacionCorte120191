@@ -36,13 +36,13 @@ class pruebas(unittest.TestCase):
 
 
     def test_calcular_precio_producto_fuera(self):
-        self.assertEqual(f.calcular_precio_producto_fuera(5000,100),19000)
-        self.assertEqual(f.calcular_precio_producto_fuera(2000, 100), 14500
+        self.assertEqual(f.calcular_precio_producto_fuera(5000, 100), 19000)
+        self.assertEqual(f.calcular_precio_producto_fuera(2000, 100), 14500)
 
     def test_calcular_iva_producto(self):
-        self.assertEqual(f.calcular_iva_producto(5000,7),525)
-        self.assertEqual(f.calcular_iva_producto(5000,0), "El producto no tiene iva")
-        self.assertEqual(f.calcular_iva_producto(5000,-1), "Verifique Iva")
+        self.assertEqual(f.calcular_iva_producto(5000, 7), 525)
+        self.assertEqual(f.calcular_iva_producto(5000, 0), "El producto no tiene iva")
+        self.assertEqual(f.calcular_iva_producto(5000, -1), "Verifique Iva")
 
     def test_calcular_iva_servicio(self):
         self.assertEqual(f.calcular_iva_servicio(5, 14),7000)
@@ -56,7 +56,7 @@ class pruebas(unittest.TestCase):
         self.assertIsNot(f.calcular_iva_envio(-17, 16), "cifra no valida")
 
     def test_calcular_iva_servicio_fuera(self):
-        self.assertEqual(f.calcular_iva_servicio_fuera(10,16),160000.0)
+        self.assertEqual(f.calcular_iva_servicio_fuera(10,16),16000.0)
         self.assertEqual(f.calcular_iva_servicio_fuera(-4,-48),"Cifras no validas")
         self.assertEqual(f.calcular_iva_servicio_fuera(-8,98),"Cifras no validas")
         self.assertEqual(f.calcular_iva_servicio_fuera(-8,89),"Cifras no validas")

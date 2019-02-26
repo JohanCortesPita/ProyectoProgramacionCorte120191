@@ -112,8 +112,7 @@ Pruebas: Edward
 Documentación: Johan
 """
 
-def calcular_precio_producto_fuera(coste_producto,
-                                   kilometros):
+def calcular_precio_producto_fuera(coste_producto, kilometros):
     '''
     (int) -> int
     
