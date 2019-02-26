@@ -79,8 +79,12 @@ Documentación: Johan
 
 def calcular_precio_producto_fuera(coste_producto,
                                    kilometros):
-    pass
-
+    '''
+     >>> calcular_precio_producto_fuera(100,15)
+    1875.0
+    >>> calcular_precio_producto_fuera(15000,80)
+    31700.0
+    '''
 """
 Desarrollo: David
 Pruebas: Edward
@@ -88,8 +92,13 @@ Documentación: Johan
 """
 
 def calcular_iva_producto(coste_producto, tasa):
-    pass
-
+    '''
+    >>> calcular_iva_producto(2500,19)
+    712.5
+    >>> calcular_iva_producto(75000,19)
+    21375.0
+    '''
+    
 """
 Desarrollo: David
 Pruebas: Edward
@@ -97,7 +106,12 @@ Documentación: Johan
 """
 
 def calcular_iva_servicio(cantidad_horas, tasa):
-    pass
+    '''
+    >>> calcular_iva_servicio(3,19)
+    57000.0
+    >>> calcular_iva_servicio(24,19)
+    456000.0
+    '''
 
 """
 Desarrollo: David
@@ -106,7 +120,13 @@ Documentación: Johan
 """ $
 
 def calcular_iva_envio(kilometros, tasa):
-    pass
+    '''
+    
+    >>> calcular_iva_envio(10,19)
+    218.5
+    >>> calcular_iva_envio(25,16)
+    460.0
+    '''
 
 """
 Desarrollo: Johan
@@ -115,7 +135,10 @@ Documentación: Edward
 """
 
 def calcular_iva_servicio_fuera(cantidad_horas, tasa):
-    pass
+    '''
+    >>> calcular_iva_servicio_fuera(10,16)
+    160000.0
+    '''
 
 """
 Desarrollo: Johan
@@ -126,8 +149,14 @@ Documentación: Edward
 def calcular_recaudo_locales(coste_producto_1,
                              coste_producto_2,
                              coste_producto_3):
-    pass
-
+   '''
+    >>> calcular_recaudo_locales(1,1,1)
+    4.5
+    >>> calcular_recaudo_locales(60,20,30)
+    165.0
+    >>> calcular_recaudo_locales(20.5,15,9.5)
+    67.5
+    '''
 """
 Desarrollo: Johan
 Pruebas: David
@@ -138,8 +167,14 @@ def calcular_recaudo_horas_extra(horas_1,
                                  horas_2,
                                  horas_3,
                                  horas_4):
-    pass
-
+    '''
+    
+    >>> calcular_recaudo_horas_extra(2,6,8,4)
+    2000000
+    
+    >>> calcular_recaudo_horas_extra(6,4,2,1)
+    1300000
+    '''
 """
 Desarrollo: Johan
 Pruebas: David
@@ -150,5 +185,10 @@ def calcular_recaudo_mixto_local(coste_producto_1,
                                  coste_producto_2,
                                  horas_1,
                                  horas_2):
-    pass
+    '''
+    >>> calcular_recaudo_mixto_local(100,300,4,8)
+    1200600.0
+    >>> calcular_recaudo_mixto_local(5000,3500,8,8)
+    1612750.0
+
 
