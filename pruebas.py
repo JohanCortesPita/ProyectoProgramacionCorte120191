@@ -44,13 +44,15 @@ class pruebas(unittest.TestCase):
     Documentación: Johan
     """
     def test_calcular_precio_producto_fuera(self):
-        pass
+        self.assertEqual(f.calcular_precio_producto_fuera(5000,100),19000)
+        self.assertEqual(f.calcular_precio_producto_fuera(2000, 100), 14500)
 
     """
     Desarrollo: David
     Pruebas: Edward
     Documentación: Johan
     """
+
     def test_calcular_iva_producto(self):
         pass
 
