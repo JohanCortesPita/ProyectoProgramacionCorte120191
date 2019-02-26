@@ -41,7 +41,17 @@ Documentación: Johan
 
 def calcular_precio_producto_fuera(coste_producto,
                                    kilometros):
-    pass
+
+     #calcula el precio del producto
+     valor_producto = calcular_precio_producto(coste_producto)
+
+     #Calculando costo de envio fuera de la ciudad
+     costo_envio = calcular_costo_envio(kilometros)
+
+     #Valor total de la venta fuera de la ciudad
+     venta_fuera_de_la_ciudad = valor_producto + costo_envio
+
+     return venta_fuera_de_la_ciudad
 
 """
 Desarrollo: David
@@ -50,7 +60,15 @@ Documentación: Johan
 """
 
 def calcular_iva_producto(coste_producto, tasa):
-    pass
+
+     #valor del producto
+     valor_producto = calcular_precio_producto(coste_producto)
+
+
+     #El iva del producto
+     iva = valor_producto * tasa / 100
+
+     return iva
 
 """
 Desarrollo: David
@@ -59,7 +77,14 @@ Documentación: Johan
 """
 
 def calcular_iva_servicio(cantidad_horas, tasa):
-    pass
+
+     #Valores para calcular el servicio
+     servicio = calcular_precio_servicio(cantidad_horas)
+
+     #El iva del producto
+     iva = servicio * tasa / 100
+
+     return iva
 
 """
 Desarrollo: David
@@ -68,7 +93,14 @@ Documentación: Johan
 """
 
 def calcular_iva_envio(kilometros, tasa):
-    pass
+
+     #Calculando costo de envio fuera de la ciudad
+     costo_envio = calcular_costo_envio(kilometros)
+
+     #El iva del envio
+     iva = costo_envio * tasa / 100
+
+     return iva
 
 """
 Desarrollo: Johan
