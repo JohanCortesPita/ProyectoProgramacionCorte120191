@@ -4,7 +4,8 @@ Pruebas: Johan
 Documentación: David
 """
 def calcular_precio_producto(coste_producto):
-    pass
+    precio_producto=((coste_producto/2)+(coste_producto))
+    return precio_producto
 
 """
 Desarrollo: Edward
@@ -13,7 +14,8 @@ Documentación: David
 """
 
 def calcular_precio_servicio(cantidad_horas):
-    pass
+    precio_servicio= (cantidad_horas*10000)
+    return precio_servicio
 
 """
 Desarrollo: Edward
@@ -31,7 +33,9 @@ Documentación: David
 """
 
 def calcular_costo_envio(kilometros):
+
     pass
+
 
 """
 Desarrollo: David
@@ -78,7 +82,7 @@ Documentación: Edward
 
 def calcular_iva_servicio_fuera(cantidad_horas, tasa):
 
-#Calcula el precio del servicio segun la cantidad de horas
+    #Calcula el precio del servicio segun la cantidad de horas
     servicio = calcular_precio_servicio(cantidad_horas)
 
     #Iva del servicio fuera de la cuidad
